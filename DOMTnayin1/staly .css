@@ -1,0 +1,10 @@
+.blok {
+      width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: black;
+}
+.bigBlok{
+    display: flex;
+    flex-direction: row;
+}
