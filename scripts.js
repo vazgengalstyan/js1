@@ -1,3 +1,4 @@
+//Հետեւյալ օբյեկտից նկարել ծառ html-ում, և ծառի ամեն ճյուղը ներկել կարմիր։
 let data = {
     "Рыбы": {
       "форель": {},
@@ -43,3 +44,36 @@ let data = {
   let wood = document.getElementById('wood');
   woodFunc(wood, data);
 
+  
+  // [{element: 'p', content: 'test text', id: 1}, {element: 'div', class: 'block', id: 2},
+   //{element: 'input', value: 'test'}]
+   //Գրել ֆունկցիա որը նման մասիվից html-ում կավելացնի էլեմենտներ։
+
+  let arr=[{element: 'p', content: 'test text', id: 1}, 
+{element: 'div', class: 'block', id: 2}, 
+{element: 'input', value: 'test'}]
+
+let arrFunc = arr =>{
+    arr.forEach((item)=> {
+       
+       let elem =document.createElement(item.element)
+        for (let  key in item) {
+            if(key === 'element'){
+                continue
+                
+            }
+            else if(key==='content'){
+                elem.innerText = item[key]
+
+            }
+            else {
+                elem.setAttribute(key,item[key])
+               
+            }
+            document.getElementById('element').append(elem)
+        }
+      
+      });
+
+}
+arrFunc(arr)
