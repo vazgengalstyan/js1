@@ -63,3 +63,7 @@ let deleteAttribute = (arr) =>{
 }
 
 deleteAttribute(links);
+
+
+
+
