@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class = 'glavDiv'>
+  <input type="number" id = 'num1' class = 'input' placeholder="Enter number">
+ 
+  <div>
+    <button class = 'button' onclick = "action='+'"><span>+</span></button>
+    <button class = 'button' onclick = "action='-'"><span>-</span></button>
+    <button class = 'button' onclick = "action='*'"><span>*</span></button>
+    <button class = 'button' onclick = "action='/'"><span>/</span></button>
+    <button class = 'button' onclick = "action='%'"><span>%</span></button>
+    <button class = 'button' onclick = "action='x2'"><span>x2</span></button>
+    <button class = 'button' onclick = "action='x3'"><span>x3</span></button>
+    <button class = 'button' onclick = "action='x-y'"><span>x-y</span></button>
+  </div>
+  <input type="number" id = 'num2' class = 'input' placeholder="Enter number">
+<button onclick = 'actionFunc()' class = 'button1'><span class = 'smooth'>=</span></button>
+<p id = 'p'></p>
+</div>
+
+
+    <script src="scripts/main.js"></script>
+    </body>
+    </html>

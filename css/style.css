@@ -1,0 +1,58 @@
+.glavDiv{
+    border:4px solid black;
+    width: 269px;
+    height: 370px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.input{
+    height: 70px;
+    width: 265px;
+    font-size: 40px;
+    background-color: aqua;
+    border: 0;
+   
+}
+.inpu1{
+    height: 30px;
+    width: 295px;
+    font-size: 40px;
+    background-color: brown;
+    border: 0;
+}
+.smooth{
+    font-size: 30px;
+}
+.button{
+    width: 54px;
+    height: 35px;
+    background-color: rgb(204, 204, 172);
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+}
+.button:hover{
+    opacity: 0.5;
+}
+.button1:hover{
+    opacity: 0.5;
+}
+.button1{
+    width: 260px;
+    height: 30px;
+    background-color: rgb(204, 204, 172);
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+    border:0;
+   
+}
+span,.button{
+    font-size: 25px;
+}
+#p{
+    font-size: 40px;
+    color: white;
+}
