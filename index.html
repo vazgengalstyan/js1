@@ -8,11 +8,32 @@
     <link rel="stylesheet" href="./css.css">
 </head>
 <body>
-    <input type="number" id="number" placeholder="number"><br><br>
-    <input type="text" id="mark" placeholder="+ - / *" ><br><br>
-    <input type="number" id="number2" placeholder="number"><br><br>
-    <input type="submit" id="submit">
-    <p id="text"></p>
+   <!-- <div class="block" id="block"></div> -->
+   <form >
+
+    <label> Firstname </label>
+    <input type="text" anunn="firstname"  id="name" /> <br> <br>
+
+    <label> Lastname: </label>
+    <input type="text" name="lastname" id="lastnem" /> <br> <br>
+
+    
+    <input type="radio" name="male" id="male" /> Male 
+    <input type="radio" name="male" id="female" /> Female <br> <br>
+
+    <label for="start"> Date of Birth:</label>
+
+    <input type="date" id="date" name="trip-start" value="2022-07-22" >
+    <br>
+    <label> Address: </label>
+    <input type="text" name="lastname" id="address" /> <br> <br>
+
+    <br> <br> Email:
+    <input type="email" id="email" name="email" /> <br>
+    <br>
+    <br>
+    <input type="button" value="Submit" id="submit" />
+</form>
 
     <script src="./app.js"></script>
 
