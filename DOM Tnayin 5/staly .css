@@ -1,0 +1,13 @@
+#full{
+    position: relative;
+    height: 100vh;
+    width: 1000vh;
+    border: 1px solid red;
+
+}
+#blok{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
