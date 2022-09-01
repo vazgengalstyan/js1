@@ -1,0 +1,18 @@
+input{
+	margin:10px
+}
+#submit{
+    margin:10px
+}
+
+form{
+    border:1px solid black;
+    width: 300px;
+    height: 150px;
+}
+#secondPart{
+    border:1px solid black;
+    width: 300px;
+    height: 150px;
+    display:none
+}

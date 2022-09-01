@@ -1,69 +1,34 @@
+let elem = document.querySelector('#formPart')
+let elem2 = document.querySelector('#secondPart');
+let paragraph = document.querySelector('#mailValue');
 
-//Task 1 js-ում ստանալ հղումները և ամեն երկրորդի գույնը դարձել կարմիր:
-let links = document.getElementsByClassName("link");
-
-let changeLinksColor = (arr)=>{
-   for(let i = 0; i <arr.length; i++){
-    if(i % 2 !== 0){
-        arr[i].style.color = 'red'
-    }
-   }
-}
-
-changeLinksColor(links);
+let elem3 = document.forms.myForm.one;
+let elem4 = document.forms.myForm.two;
 
 
-// Task 2 հղումներից ստանալ href-ները և լցնել մասիվի մեջ:(մասիվը տպել);
-
-let getHrefs =(arr)=>{
-let arr2 = [];
-for(let i = 0; i < arr.length;i++){
-     arr2.push(arr[i].getAttribute('href'))
-}
-console.log(arr2)
-}
-getHrefs(links)
-console.log('_____________');
-
-// Task 3 հղումներին ավելացնել ոչ ստանդարտ attribute: Օրինակ test attribute, ինչ-որ value-ով:
-
-let addAttribute = (arr)=>{
-for(let i = 0; i < arr.length;i++){
-    arr[i].setAttribute('test', 'hello')
-    console.log(arr[i])
-}
-
-}
-addAttribute(links)
-console.log('_____________');
-
-// Task 4 հղումներին ավելացնել ստանդարտ target attribute _blank value-ով:
 
 
-let addStandartAttribute = (arr)=>{
-    for(let i = 0; i < arr.length;i++){
-        arr[i].setAttribute('target', '_blank')
-        console.log(arr[i])
-    }
-    
-    }
-    addStandartAttribute(links)
-
-    console.log('_____________')
-  
-// Task 5 ջնջել href attribute-ը ամեն երկրորդ հղումից:
-let deleteAttribute = (arr) =>{
-    for(let i = 0; i < arr.length; i++){
-        if(i % 2 !== 0){
-            arr[i].removeAttribute('href')
-        }
-        console.log(arr[i]);
-       }
+let saveStorage = ()=>{
+	localStorage.setItem('email', elem3.value);
+	alert(localStorage.getItem('email'))
+	localStorage.setItem('password', elem4.value);
+	alert(localStorage.getItem('password'))
 
 }
 
-deleteAttribute(links);
+if(localStorage.email){
+	elem.style.display = "none";
+	elem2.style.display = "block";	
+	let text = localStorage.getItem('email');
+	let pass = localStorage.getItem('password')
+	paragraph.innerHTML = `email is: <strong>${text}</strong> + password is: <strong>${pass}</strong>`;
+	
+}
+let checkStorage =()=>{
+	
+	elem2.style.display = "none";
+	elem.style.display = "block";
+	localStorage.removeItem('email', elem3.value);	
+	localStorage.removeItem('password', elem3.value);	
 
-
-
-
+}
